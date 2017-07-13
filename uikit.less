@@ -4,21 +4,47 @@
 @regularPad: 10px;
 @heavyPad: 20px;
 @heavierPad: 30px;
-@defaultButtonPad: 8px;
+@defaultButtonPad: 10px;
 
 @lighterRound: 2px;
 @lightRound: 5px;
 @regularRound: 10px;
 @heavyRound: 15px;
 @heavierRound: 20px;
-@defaultRound: 7px;
+@defaultRound: 6px;
 
 @circleRound: 50%;
+@pillRound: 999px;  // setting a very large value here works on most browsers
 
 // fonts
 @primaryFontStack: "HelveticaNeue-Light", Helvetica, sans-serif;
 
-@linkColor: #3399FF;
+@linkColor: #3399ff;
+@black: #000;
+@white: #fff;
+@blue: #3399ff;
+@green: #29d06f;
+@yellow: #ffe500;
+@red: #f14545;
+@gray: #777;
+@lightGray: #eee;
+@darkGray: #333;
+@teal: #33aabb;
+@purple: #903996;
+@softBlue: #7298b5;
+@softGreen: #42b895;
+@softRed: #d87171;
+@softPink: #d65c7c;
+@softPurple: #885577;
+@softYellow: #e8c256;
+@darkBlue: #001d86;
+@darkRed: darken(@red, 20%);
+@darkGreen: #02903e;
+@brightGreen: #66cc00;
+@brightPink: #e000b3;
+
+@defaultButtonBackgroundColor: @lightGray;
+@defaultButtonTextColor: @black;
 
 // Generic
 
@@ -27,8 +53,20 @@ body {
   font-family: @primaryFontStack;
 }
 
-h1 {
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 400;
+  &.title {
+    font-weight: 600;
+  }
+  &.subtitle {
+    font-weight: 500;
+  }
+}
 
+p {
+  .body {
+    font-weight: 400;
+  }
 }
 
 a {
@@ -39,26 +77,26 @@ a {
 
 // Padded Container
 
-.container {
-  padding: 10px;
-  margin: 10px;
-
-  &.lighter-pad {
-    padding: @lighterPad;
-  }
-  &.light-pad {
-    padding: @lightPad;
-  }
-  &.regular-pad {
-    padding: @regularPad;
-  }
-  &.heavy-pad {
-    padding: @heavyPad;
-  }
-  &.heavier-pad {
-    padding: @heavierPad;
-  }
-}
+// .container {
+//   padding: 10px;
+//   margin: 10px;
+//
+//   &.lighter-pad {
+//     padding: @lighterPad;
+//   }
+//   &.light-pad {
+//     padding: @lightPad;
+//   }
+//   &.regular-pad {
+//     padding: @regularPad;
+//   }
+//   &.heavy-pad {
+//     padding: @heavyPad;
+//   }
+//   &.heavier-pad {
+//     padding: @heavierPad;
+//   }
+// }
 
 //set border radius dynamically
 .borderRadius(@a) {
@@ -87,20 +125,31 @@ a {
     .borderRadius(@heavierRound);
   }
   &.circle {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    margin: 10px 5px;
+    text-align: center;
+    font-size: 21px;
+    text-overflow: ellipsis;
+    overflow: hidden;
     .borderRadius(@circleRound);
+  }
+  &.pill {
+    .borderRadius(@pillRound);
   }
 }
 
-// dynamically sized container with shadow
-.box {
-  .container;
-  .round;
-  box-shadow: 0px 0px 1px rgba(0,0,0,0.6);
-}
-
 // buttons
-.button {
+.baseButton {
+  .round;
+  .medium;
+  cursor: pointer;
+  background: @defaultButtonBackgroundColor;
+  color: @defaultButtonTextColor;
   padding: @defaultButtonPad @defaultButtonPad*2;
+  margin: 10px 5px;
   display: inline-block;
   &.lighter-pad {
     padding: @lighterPad @lighterPad*2;
@@ -127,7 +176,7 @@ a {
   }
   &.medium {
     .regular-pad;
-    font-size: 14px;
+    font-size: 16px;
   }
   &.large {
     .heavy-pad;
@@ -137,7 +186,178 @@ a {
     .heavier-pad;
     font-size: 28px;
   }
-  .round;
-  background: #000;
-  color: #fff;
+}
+
+.button {
+  .solid;
+  .baseButton;
+}
+
+.bordered-button {
+  .baseButton;
+}
+
+.dynamicTextColor() {
+  color: @white;
+}
+
+.dynamicTextColor (@backgroundColor) when (@backgroundColor = @yellow) {
+  color: @black;
+}
+
+.dynamicTextColor (@backgroundColor) when (@backgroundColor = @lightGray) {
+  color: @black;
+}
+
+.dynamicTextColor (@backgroundColor) when (@backgroundColor = @white) {
+  color: @black;
+}
+.dynamicTextColor (@backgroundColor) when (lightness(@backgroundColor) >= 70%) {
+  color: @black;
+}
+
+.buttonHover(@color) {
+  &:hover {
+    background-color: darken(@color, 10%);
+    .dynamicTextColor(@color);
+  }
+}
+
+.borderedButtonHover(@color) {
+  &:hover {
+    background-color: darken(@color, 10%);
+    color: lighten(@color, 25%);
+    .dynamicTextColor(@color);
+  }
+}
+
+.buildButtonColor(@color) {
+  .buttonHover(@color);
+  background: @color;
+  color: @white;
+  .dynamicTextColor(@color);
+}
+
+.buildBorderedButtonColor(@color) {
+  .borderedButtonHover(@color);
+  border-color: @color;
+  color: @color;
+}
+
+.buildMonotoneButtonColor(@color) {
+  background-color: darken(@color, 10%);
+  color: lighten(@color, 35%);
+  .dynamicTextColor(@color);
+}
+
+.buildMonotoneButtonColor(@color) when (lightness(@color) >= 50%) {
+  background-color: darken(@color, 10%);
+  color: lighten(@color, 20%);
+  .dynamicTextColor(@color);
+}
+
+.buildButtonColorConnections {
+  &.red { .buildButtonColor(@red) }
+  &.green { .buildButtonColor(@green) }
+  &.yellow { .buildButtonColor(@yellow) }
+  &.blue { .buildButtonColor(@blue) }
+  &.teal { .buildButtonColor(@teal) }
+  &.purple { .buildButtonColor(@purple) }
+  &.soft-blue { .buildButtonColor(@softBlue) }
+  &.soft-green { .buildButtonColor(@softGreen) }
+  &.soft-red { .buildButtonColor(@softRed) }
+  &.soft-pink { .buildButtonColor(@softPink) }
+  &.soft-purple { .buildButtonColor(@softPurple) }
+  &.soft-yellow { .buildButtonColor(@softYellow) }
+  &.dark-blue { .buildButtonColor(@darkBlue) }
+  &.dark-green { .buildButtonColor(@darkGreen) }
+  &.dark-red { .buildButtonColor(@darkRed) }
+  &.bright-green { .buildButtonColor(@brightGreen) }
+  &.bright-pink { .buildButtonColor(@brightPink) }
+  &.white { .buildButtonColor(@white) }
+  &.gray { .buildButtonColor(@gray) }
+  &.light-gray { .buildButtonColor(@lightGray) }
+  &.dark-gray { .buildButtonColor(@darkGray) }
+  &.black { .buildButtonColor(@black) }
+}
+
+.buildBorderedButtonColorConnections {
+  &.red { .buildBorderedButtonColor(@red) }
+  &.green { .buildBorderedButtonColor(@green) }
+  &.yellow { .buildBorderedButtonColor(@yellow) }
+  &.blue { .buildBorderedButtonColor(@blue) }
+  &.teal { .buildBorderedButtonColor(@teal) }
+  &.purple { .buildBorderedButtonColor(@purple) }
+  &.soft-blue { .buildBorderedButtonColor(@softBlue) }
+  &.soft-green { .buildBorderedButtonColor(@softGreen) }
+  &.soft-red { .buildBorderedButtonColor(@softRed) }
+  &.soft-pink { .buildBorderedButtonColor(@softPurple) }
+  &.soft-purple { .buildBorderedButtonColor(@softPurple) }
+  &.dark-blue { .buildBorderedButtonColor(@darkBlue) }
+  &.dark-green { .buildBorderedButtonColor(@darkGreen) }
+  &.dark-red { .buildBorderedButtonColor(@darkRed) }
+  &.bright-green { .buildBorderedButtonColor(@brightGreen) }
+  &.bright-pink { .buildBorderedButtonColor(@brightPink) }
+  &.soft-yellow { .buildBorderedButtonColor(@softYellow) }
+  &.white { .buildBorderedButtonColor(@white) }
+  &.gray { .buildBorderedButtonColor(@gray) }
+  &.light-gray { .buildBorderedButtonColor(@lightGray) }
+  &.dark-gray { .buildBorderedButtonColor(@darkGray) }
+  &.black { .buildBorderedButtonColor(@black) }
+}
+
+.buildMonotoneButtonColorConnections {
+  &.red { .buildMonotoneButtonColor(@red) }
+  &.green { .buildMonotoneButtonColor(@green) }
+  &.yellow { .buildMonotoneButtonColor(@yellow) }
+  &.blue { .buildMonotoneButtonColor(@blue) }
+  &.teal { .buildMonotoneButtonColor(@teal) }
+  &.purple { .buildMonotoneButtonColor(@purple) }
+  &.soft-blue { .buildMonotoneButtonColor(@softBlue) }
+  &.soft-green { .buildMonotoneButtonColor(@softGreen) }
+  &.soft-red { .buildMonotoneButtonColor(@softRed) }
+  &.soft-pink { .buildMonotoneButtonColor(@softPurple) }
+  &.soft-purple { .buildMonotoneButtonColor(@softPurple) }
+  &.dark-blue { .buildMonotoneButtonColor(@darkBlue) }
+  &.dark-green { .buildMonotoneButtonColor(@darkGreen) }
+  &.dark-red { .buildMonotoneButtonColor(@darkRed) }
+  &.bright-green { .buildMonotoneButtonColor(@brightGreen) }
+  &.bright-pink { .buildMonotoneButtonColor(@brightPink) }
+  &.soft-yellow { .buildMonotoneButtonColor(@softYellow) }
+  &.white { .buildMonotoneButtonColor(@white) }
+  &.gray { .buildMonotoneButtonColor(@gray) }
+  &.light-gray { .buildMonotoneButtonColor(@lightGray) }
+  &.dark-gray { .buildMonotoneButtonColor(@darkGray) }
+  &.black { .buildMonotoneButtonColor(@black) }
+}
+
+// .buildGradientConnection()
+
+.bordered-button {
+  background: none;
+  border: 1px solid @black;
+  color: @black;
+  .buildBorderedButtonColorConnections;
+}
+
+.raised {
+  box-shadow: 0 2px 2px rgba(0,0,0,0.4);
+  &:hover {
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+  }
+}
+
+.monotone {
+  .buildMonotoneButtonColorConnections;
+}
+
+.no-round {
+  .borderRadius(0);
+}
+
+.solid {
+  background: @defaultButtonBackgroundColor;
+  border: 0;
+  color: @defaultButtonTextColor;
+  .buildButtonColorConnections;
 }

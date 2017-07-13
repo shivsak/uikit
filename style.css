@@ -1,3 +1,8 @@
+body {
+  font-family: 'Lato';
+  padding: 30px;
+}
+
 .containerDiv1 {
   background: red;
 }
@@ -16,4 +21,27 @@
 
 .containerDiv5 {
   background: white;
+}
+
+.modify {
+  /*background: #66CC00 !important;*/
+}
+
+.section {
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+}
+
+// Padded Container
+
+.container {
+  padding: 10px;
+  margin: 10px;
+}
+
+.box {
+  padding: 20px;
+  margin: 10px auto;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 10px;
+  max-width: 1000px;
 }
