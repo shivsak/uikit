@@ -71,9 +71,9 @@ a {
 }
 .round.circle {
     display: inline-block;
-    width: 25px;
-    height: 25px;
-    padding: 10px;
+    width: 24px;
+    height: 24px;
+    padding: 12px;
     margin: 10px 5px;
     text-align: center;
     font-size: 21px;
@@ -135,9 +135,9 @@ a {
 }
 .baseButton.circle {
     display: inline-block;
-    width: 25px;
-    height: 25px;
-    padding: 10px;
+    width: 24px;
+    height: 24px;
+    padding: 12px;
     margin: 10px 5px;
     text-align: center;
     font-size: 21px;
@@ -189,7 +189,7 @@ a {
     padding: 30px 90px;
     font-size: 28px;
 }
-.button {
+.ss-button {
     border: 0;
     border-radius: 6px;
     -webkit-border-radius: 6px;
@@ -203,201 +203,201 @@ a {
     margin: 10px 5px;
     display: inline-block;
 }
-.button.red {
+.ss-button.red {
     background: #f14545;
     color: #fff;
 }
-.button.red:hover {
+.ss-button.red:hover {
     background-color: #ed1616;
 }
-.button.green {
+.ss-button.green {
     background: #29d06f;
     color: #fff;
 }
-.button.green:hover {
+.ss-button.green:hover {
     background-color: #21a558;
 }
-.button.yellow {
+.ss-button.yellow {
     background: #ffe500;
     color: #fff;
     color: #000;
 }
-.button.yellow:hover {
+.ss-button.yellow:hover {
     background-color: #ccb700;
     color: #000;
 }
-.button.blue {
+.ss-button.blue {
     background: #3399ff;
     color: #fff;
 }
-.button.blue:hover {
+.ss-button.blue:hover {
     background-color: #007fff;
 }
-.button.teal {
+.ss-button.teal {
     background: #33aabb;
     color: #fff;
 }
-.button.teal:hover {
+.ss-button.teal:hover {
     background-color: #288693;
 }
-.button.purple {
+.ss-button.purple {
     background: #903996;
     color: #fff;
 }
-.button.purple:hover {
+.ss-button.purple:hover {
     background-color: #6d2b71;
 }
-.button.soft-blue {
+.ss-button.soft-blue {
     background: #7298b5;
     color: #fff;
 }
-.button.soft-blue:hover {
+.ss-button.soft-blue:hover {
     background-color: #547fa0;
 }
-.button.soft-green {
+.ss-button.soft-green {
     background: #42b895;
     color: #fff;
 }
-.button.soft-green:hover {
+.ss-button.soft-green:hover {
     background-color: #359277;
 }
-.button.soft-red {
+.ss-button.soft-red {
     background: #d87171;
     color: #fff;
 }
-.button.soft-red:hover {
+.ss-button.soft-red:hover {
     background-color: #cd4949;
 }
-.button.soft-pink {
+.ss-button.soft-pink {
     background: #d65c7c;
     color: #fff;
 }
-.button.soft-pink:hover {
+.ss-button.soft-pink:hover {
     background-color: #cc335b;
 }
-.button.soft-purple {
+.ss-button.soft-purple {
     background: #885577;
     color: #fff;
 }
-.button.soft-purple:hover {
+.ss-button.soft-purple:hover {
     background-color: #69415c;
 }
-.button.soft-yellow {
+.ss-button.soft-yellow {
     background: #e8c256;
     color: #fff;
 }
-.button.soft-yellow:hover {
+.ss-button.soft-yellow:hover {
     background-color: #e2b229;
 }
-.button.dark-blue {
+.ss-button.dark-blue {
     background: #001d86;
     color: #fff;
 }
-.button.dark-blue:hover {
+.ss-button.dark-blue:hover {
     background-color: #001253;
 }
-.button.dark-green {
+.ss-button.dark-green {
     background: #02903e;
     color: #fff;
 }
-.button.dark-green:hover {
+.ss-button.dark-green:hover {
     background-color: #015e28;
 }
-.button.dark-red {
+.ss-button.dark-red {
     background: #c10f0f;
     color: #fff;
 }
-.button.dark-red:hover {
+.ss-button.dark-red:hover {
     background-color: #920b0b;
 }
-.button.bright-green {
+.ss-button.bright-green {
     background: #66cc00;
     color: #fff;
 }
-.button.bright-green:hover {
+.ss-button.bright-green:hover {
     background-color: #4d9900;
 }
-.button.bright-pink {
+.ss-button.bright-pink {
     background: #e000b3;
     color: #fff;
 }
-.button.bright-pink:hover {
+.ss-button.bright-pink:hover {
     background-color: #ad008a;
 }
-.button.white {
+.ss-button.white {
     background: #fff;
     color: #fff;
     color: #000;
 }
-.button.white:hover {
+.ss-button.white:hover {
     background-color: #e6e6e6;
     color: #000;
 }
-.button.gray {
+.ss-button.gray {
     background: #777;
     color: #fff;
 }
-.button.gray:hover {
+.ss-button.gray:hover {
     background-color: #5e5e5e;
 }
-.button.light-gray {
+.ss-button.light-gray {
     background: #eee;
     color: #fff;
     color: #000;
 }
-.button.light-gray:hover {
+.ss-button.light-gray:hover {
     background-color: #d5d5d5;
     color: #000;
 }
-.button.dark-gray {
+.ss-button.dark-gray {
     background: #333;
     color: #fff;
 }
-.button.dark-gray:hover {
+.ss-button.dark-gray:hover {
     background-color: #1a1a1a;
 }
-.button.black {
+.ss-button.black {
     background: #000;
     color: #fff;
 }
-.button.black:hover {
+.ss-button.black:hover {
     background-color: #000000;
 }
-.button.lighter-round {
+.ss-button.lighter-round {
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -o-border-radius: 2px;
 }
-.button.light-round {
+.ss-button.light-round {
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -o-border-radius: 2px;
 }
-.button.regular-round {
+.ss-button.regular-round {
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -o-border-radius: 10px;
 }
-.button.heavy-round {
+.ss-button.heavy-round {
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     -o-border-radius: 15px;
 }
-.button.heavier-round {
+.ss-button.heavier-round {
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -o-border-radius: 20px;
 }
-.button.circle {
+.ss-button.circle {
     display: inline-block;
-    width: 25px;
-    height: 25px;
-    padding: 10px;
+    width: 24px;
+    height: 24px;
+    padding: 12px;
     margin: 10px 5px;
     text-align: center;
     font-size: 21px;
@@ -408,48 +408,48 @@ a {
     -moz-border-radius: 50%;
     -o-border-radius: 50%;
 }
-.button.pill {
+.ss-button.pill {
     border-radius: 999px;
     -webkit-border-radius: 999px;
     -moz-border-radius: 999px;
     -o-border-radius: 999px;
 }
-.button.lighter-pad {
+.ss-button.lighter-pad {
     padding: 2px 4px;
 }
-.button.light-pad {
+.ss-button.light-pad {
     padding: 5px 10px;
 }
-.button.regular-pad {
+.ss-button.regular-pad {
     padding: 10px 20px;
 }
-.button.heavy-pad {
+.ss-button.heavy-pad {
     padding: 20px 50px;
 }
-.button.heavier-pad {
+.ss-button.heavier-pad {
     padding: 30px 90px;
 }
-.button.tiny {
+.ss-button.tiny {
     padding: 5px 10px;
     font-size: 10px;
 }
-.button.small {
+.ss-button.small {
     padding: 5px 10px;
     font-size: 12px;
 }
-.button.medium {
+.ss-button.medium {
     padding: 10px 20px;
     font-size: 16px;
 }
-.button.large {
+.ss-button.large {
     padding: 20px 50px;
     font-size: 21px;
 }
-.button.x-large {
+.ss-button.x-large {
     padding: 30px 90px;
     font-size: 28px;
 }
-.bordered-button {
+.ss-bordered-button {
     border-radius: 6px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
@@ -462,41 +462,41 @@ a {
     margin: 10px 5px;
     display: inline-block;
 }
-.bordered-button.lighter-round {
+.ss-bordered-button.lighter-round {
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -o-border-radius: 2px;
 }
-.bordered-button.light-round {
+.ss-bordered-button.light-round {
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -o-border-radius: 2px;
 }
-.bordered-button.regular-round {
+.ss-bordered-button.regular-round {
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -o-border-radius: 10px;
 }
-.bordered-button.heavy-round {
+.ss-bordered-button.heavy-round {
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     -o-border-radius: 15px;
 }
-.bordered-button.heavier-round {
+.ss-bordered-button.heavier-round {
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -o-border-radius: 20px;
 }
-.bordered-button.circle {
+.ss-bordered-button.circle {
     display: inline-block;
-    width: 25px;
-    height: 25px;
-    padding: 10px;
+    width: 24px;
+    height: 24px;
+    padding: 12px;
     margin: 10px 5px;
     text-align: center;
     font-size: 21px;
@@ -507,44 +507,44 @@ a {
     -moz-border-radius: 50%;
     -o-border-radius: 50%;
 }
-.bordered-button.pill {
+.ss-bordered-button.pill {
     border-radius: 999px;
     -webkit-border-radius: 999px;
     -moz-border-radius: 999px;
     -o-border-radius: 999px;
 }
-.bordered-button.lighter-pad {
+.ss-bordered-button.lighter-pad {
     padding: 2px 4px;
 }
-.bordered-button.light-pad {
+.ss-bordered-button.light-pad {
     padding: 5px 10px;
 }
-.bordered-button.regular-pad {
+.ss-bordered-button.regular-pad {
     padding: 10px 20px;
 }
-.bordered-button.heavy-pad {
+.ss-bordered-button.heavy-pad {
     padding: 20px 50px;
 }
-.bordered-button.heavier-pad {
+.ss-bordered-button.heavier-pad {
     padding: 30px 90px;
 }
-.bordered-button.tiny {
+.ss-bordered-button.tiny {
     padding: 5px 10px;
     font-size: 10px;
 }
-.bordered-button.small {
+.ss-bordered-button.small {
     padding: 5px 10px;
     font-size: 12px;
 }
-.bordered-button.medium {
+.ss-bordered-button.medium {
     padding: 10px 20px;
     font-size: 16px;
 }
-.bordered-button.large {
+.ss-bordered-button.large {
     padding: 20px 50px;
     font-size: 21px;
 }
-.bordered-button.x-large {
+.ss-bordered-button.x-large {
     padding: 30px 90px;
     font-size: 28px;
 }
@@ -984,187 +984,187 @@ a {
     background-color: #000000;
     color: #595959;
 }
-.bordered-button {
+.ss-bordered-button {
     background: none;
     border: 1px solid #000;
     color: #000;
 }
-.bordered-button.red {
+.ss-bordered-button.red {
     border-color: #f14545;
     color: #f14545;
 }
-.bordered-button.red:hover {
+.ss-bordered-button.red:hover {
     background-color: #ed1616;
     color: #fabcbc;
 }
-.bordered-button.green {
+.ss-bordered-button.green {
     border-color: #29d06f;
     color: #29d06f;
 }
-.bordered-button.green:hover {
+.ss-bordered-button.green:hover {
     background-color: #21a558;
     color: #8fe9b5;
 }
-.bordered-button.yellow {
+.ss-bordered-button.yellow {
     border-color: #ffe500;
     color: #ffe500;
 }
-.bordered-button.yellow:hover {
+.ss-bordered-button.yellow:hover {
     background-color: #ccb700;
     color: #fff280;
     color: #000;
 }
-.bordered-button.blue {
+.ss-bordered-button.blue {
     border-color: #3399ff;
     color: #3399ff;
 }
-.bordered-button.blue:hover {
+.ss-bordered-button.blue:hover {
     background-color: #007fff;
     color: #b3d9ff;
 }
-.bordered-button.teal {
+.ss-bordered-button.teal {
     border-color: #33aabb;
     color: #33aabb;
 }
-.bordered-button.teal:hover {
+.ss-bordered-button.teal:hover {
     background-color: #288693;
     color: #8dd6e0;
 }
-.bordered-button.purple {
+.ss-bordered-button.purple {
     border-color: #903996;
     color: #903996;
 }
-.bordered-button.purple:hover {
+.ss-bordered-button.purple:hover {
     background-color: #6d2b71;
     color: #ca80cf;
 }
-.bordered-button.soft-blue {
+.ss-bordered-button.soft-blue {
     border-color: #7298b5;
     color: #7298b5;
 }
-.bordered-button.soft-blue:hover {
+.ss-bordered-button.soft-blue:hover {
     background-color: #547fa0;
     color: #c6d5e1;
 }
-.bordered-button.soft-green {
+.ss-bordered-button.soft-green {
     border-color: #42b895;
     color: #42b895;
 }
-.bordered-button.soft-green:hover {
+.ss-bordered-button.soft-green:hover {
     background-color: #359277;
     color: #9ddcc9;
 }
-.bordered-button.soft-red {
+.ss-bordered-button.soft-red {
     border-color: #d87171;
     color: #d87171;
 }
-.bordered-button.soft-red:hover {
+.ss-bordered-button.soft-red:hover {
     background-color: #cd4949;
     color: #f3d5d5;
 }
-.bordered-button.soft-pink {
+.ss-bordered-button.soft-pink {
     border-color: #885577;
     color: #885577;
 }
-.bordered-button.soft-pink:hover {
+.ss-bordered-button.soft-pink:hover {
     background-color: #69415c;
     color: #c19cb4;
 }
-.bordered-button.soft-purple {
+.ss-bordered-button.soft-purple {
     border-color: #885577;
     color: #885577;
 }
-.bordered-button.soft-purple:hover {
+.ss-bordered-button.soft-purple:hover {
     background-color: #69415c;
     color: #c19cb4;
 }
-.bordered-button.dark-blue {
+.ss-bordered-button.dark-blue {
     border-color: #001d86;
     color: #001d86;
 }
-.bordered-button.dark-blue:hover {
+.ss-bordered-button.dark-blue:hover {
     background-color: #001253;
     color: #063cff;
 }
-.bordered-button.dark-green {
+.ss-bordered-button.dark-green {
     border-color: #02903e;
     color: #02903e;
 }
-.bordered-button.dark-green:hover {
+.ss-bordered-button.dark-green:hover {
     background-color: #015e28;
     color: #16fc77;
 }
-.bordered-button.dark-red {
+.ss-bordered-button.dark-red {
     border-color: #c10f0f;
     color: #c10f0f;
 }
-.bordered-button.dark-red:hover {
+.ss-bordered-button.dark-red:hover {
     background-color: #920b0b;
     color: #f35d5d;
 }
-.bordered-button.bright-green {
+.ss-bordered-button.bright-green {
     border-color: #66cc00;
     color: #66cc00;
 }
-.bordered-button.bright-green:hover {
+.ss-bordered-button.bright-green:hover {
     background-color: #4d9900;
     color: #a6ff4d;
 }
-.bordered-button.bright-pink {
+.ss-bordered-button.bright-pink {
     border-color: #e000b3;
     color: #e000b3;
 }
-.bordered-button.bright-pink:hover {
+.ss-bordered-button.bright-pink:hover {
     background-color: #ad008a;
     color: #ff61df;
 }
-.bordered-button.soft-yellow {
+.ss-bordered-button.soft-yellow {
     border-color: #e8c256;
     color: #e8c256;
 }
-.bordered-button.soft-yellow:hover {
+.ss-bordered-button.soft-yellow:hover {
     background-color: #e2b229;
     color: #f7ebc6;
 }
-.bordered-button.white {
+.ss-bordered-button.white {
     border-color: #fff;
     color: #fff;
 }
-.bordered-button.white:hover {
+.ss-bordered-button.white:hover {
     background-color: #e6e6e6;
     color: #ffffff;
     color: #000;
 }
-.bordered-button.gray {
+.ss-bordered-button.gray {
     border-color: #777;
     color: #777;
 }
-.bordered-button.gray:hover {
+.ss-bordered-button.gray:hover {
     background-color: #5e5e5e;
     color: #b7b7b7;
 }
-.bordered-button.light-gray {
+.ss-bordered-button.light-gray {
     border-color: #eee;
     color: #eee;
 }
-.bordered-button.light-gray:hover {
+.ss-bordered-button.light-gray:hover {
     background-color: #d5d5d5;
     color: #ffffff;
     color: #000;
 }
-.bordered-button.dark-gray {
+.ss-bordered-button.dark-gray {
     border-color: #333;
     color: #333;
 }
-.bordered-button.dark-gray:hover {
+.ss-bordered-button.dark-gray:hover {
     background-color: #1a1a1a;
     color: #737373;
 }
-.bordered-button.black {
+.ss-bordered-button.black {
     border-color: #000;
     color: #000;
 }
-.bordered-button.black:hover {
+.ss-bordered-button.black:hover {
     background-color: #000000;
     color: #404040;
 }

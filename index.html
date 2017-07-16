@@ -11,10 +11,12 @@
 <body>
 <div class="box heavier-pad containerDiv5">
     <h1 class="title">ss-buttons</h1>
-    <h2 class="subtitle">beautiful, lightweight CSS classes for common elements</h2>
-    <a class="button soft-red" href="https://raw.githubusercontent.com/shivsak/uikit/master/css/0.1/ss-buttons-0.1.min.css"><i class="fa fa-download"></i> &nbsp; ss-buttons-0.1.min.css</a>
-    <a class="button monotone soft-blue" href="https://raw.githubusercontent.com/shivsak/uikit/master/css/0.1/ss-buttons-0.1.css"><i class="fa fa-download"></i> &nbsp; ss-buttons-0.1.css</a>
-    <a href="https://github.com/shivsak/uikit" class="button soft-green"><i class="fa fa-github"></i> &nbsp; View on Github</a>
+    <span class="ss-button pill blue small" style="margin: -10px 0 0 0px;">version 0.1</span>
+    <br />
+    <h3 class="subtitle">beautiful, lightweight CSS classes for common elements</h3>
+    <a class="ss-button soft-red" href="https://raw.githubusercontent.com/shivsak/uikit/master/css/0.1/ss-buttons-0.1.min.css"><i class="fa fa-download"></i> &nbsp; ss-buttons-0.1.min.css</a>
+    <a class="ss-button monotone soft-blue" href="https://raw.githubusercontent.com/shivsak/uikit/master/css/0.1/ss-buttons-0.1.css"><i class="fa fa-download"></i> &nbsp; ss-buttons-0.1.css</a>
+    <a href="https://github.com/shivsak/uikit" class="ss-button soft-green"><i class="fa fa-github"></i> &nbsp; View on Github</a>
     <p class="body">
         Just add the CSS source (or minified source) to your project and begin using the button classes!
         Use the examples below to help you get started or check out the repository on
@@ -25,115 +27,116 @@
     <div>
         <h1 class="title">Examples</h1>
         <div class="examples">
-            <a href="#" class="button">Regular</a>
-            <a href="#" class="button raised pill black">Raised Pill</a>
-            <a href="#" class="button raised no-round soft-blue">Raised No-Round</a>
-            <a href="#" class="bordered-button raised monotone soft-purple">Raised Bordered Monotone</a>
-            <a href="#" class="bordered-button monotone no-round green">Bordered Monotone Raised No-Round</a>
+            <a class="ss-button">Regular</a>
+            <a class="ss-button raised pill black">Raised Pill</a>
+            <a class="ss-button raised no-round soft-blue">Raised No-Round</a>
+            <a class="ss-bordered-button raised monotone soft-purple">Raised Bordered Monotone</a>
+            <a class="ss-bordered-button monotone no-round green">Bordered Monotone Raised No-Round</a>
         </div>
           <pre class="prettyprint lang-html">
-              &lt;a href="#" class="button"&gt;Regular&lt;/a&gt;
-              &lt;a href="#" class="button raised pill black"&gt;Raised Pill&lt;/a&gt;
-              &lt;a href="#" class="button raised no-round soft-blue"&gt;Raised No-Round&lt;/a&gt;
-              &lt;a href="#" class="bordered-button raised monotone soft-purple"&gt;Raised Bordered Monotone&lt;/a&gt;
-              &lt;a href="#" class="bordered-button monotone no-round green"&gt;Bordered Monotone Raised No-Round&lt;/a&gt;
+              &lt;a class="ss-button"&gt;Regular&lt;/a&gt;
+              &lt;a class="ss-button raised pill black"&gt;Raised Pill&lt;/a&gt;
+              &lt;a class="ss-button raised no-round soft-blue"&gt;Raised No-Round&lt;/a&gt;
+              &lt;a class="ss-bordered-button raised monotone soft-purple"&gt;Raised Bordered Monotone&lt;/a&gt;
+              &lt;a class="ss-bordered-button monotone no-round green"&gt;Bordered Monotone Raised No-Round&lt;/a&gt;
           </pre>
         <br /><br />
         <h1 class="title">Details</h1>
         <br />
         <h3 class="title">Styles</h3>
         <div class="examples">
-            <a href="#" class="button soft-yellow">Regular Button</a>
-            <a href="#" class="bordered-button">Bordered Button</a>
-            <a href="#" class="button raised red">Raised Button</a>
-            <a href="#" class="button monotone teal">Monotone Button</a>
+            <a class="ss-button soft-yellow">Regular Button</a>
+            <a class="ss-bordered-button">Bordered Button &nbsp; <i class="fa fa-minus"></i></a>
+            <a class="ss-button raised red"><i class="fa fa-trash"></i> &nbsp; Delete</a>
+            <a class="ss-button monotone teal"><i class="fa fa-eye"></i> &nbsp; Monotone Button</a>
         </div>
+        <p><em>Note: you must include <a class="link" href="http://fontawesome.io/">font awesome</a> in your source if you want to use icons with your buttons</em></p>
         <pre class="prettyprint lang-html">
-              &lt;a href="#" class="button soft-yellow"&gt;Regular Button&lt;/a&gt;
-              &lt;a href="#" class="bordered-button"&gt;Bordered Button&lt;/a&gt;
-              &lt;a href="#" class="button raised red"&gt;Raised Button&lt;/a>
-              &lt;a href="#" class="button monotone teal"&gt;Monotone Button&lt;/a&gt;
+              &lt;a class="ss-button soft-yellow"&gt;Regular Button&lt;/a&gt;
+              &lt;a class="ss-bordered-button"&gt;Bordered Button &lt;i class="fa fa-minus"&gt;&lt;/i&gt;&lt;/a&gt;
+              &lt;a class="ss-button raised red"&gt;&lt;i class="fa fa-trash"&gt;&lt;/i&gt; Delete&lt;/a&gt;
+              &lt;a class="ss-button monotone teal"&gt;&lt;i class="fa fa-eye"&gt;&lt;/i&gt; Monotone Button&lt;/a&gt;
         </pre>
         <br /><br />
         <h3 class="title">Shapes</h3>
         <div class="examples">
-            <a href="#" class="button">Default</a>
-            <a href="#" class="button no-round black">No Round</a>
-            <a href="#" class="button pill blue">Pill Button</a>
+            <a class="ss-button">Default</a>
+            <a class="ss-button no-round black">No Round</a>
+            <a class="ss-button pill blue">Pill Button</a>
             <br /><br />
-            <a href="#" class="button raised circle soft-pink">+</a>
-            <a href="#" class="button circle soft-purple">+</a>
-            <a href="#" class="bordered-button circle red">+</a>
+            <a class="ss-button raised circle soft-red"><i class="fa fa-camera"></i></a>
+            <a class="ss-button circle soft-green"><i class="fa fa-github"></i></a>
+            <a class="ss-button monotone circle soft-blue"><i class="fa fa-twitter"></i></a>
         </div>
         <pre class="prettyprint lang-html">
-            &lt;a href="#" class="button"&gt;Default&lt;/a&gt;
-            &lt;a href="#" class="button no-round black"&gt;No Round&lt;/a&gt;
-            &lt;a href="#" class="button pill blue"&gt;Pill Button&lt;/a&gt;
-            &lt;a href="#" class="button raised circle soft-pink"&gt;+&lt;/a&gt;
-            &lt;a href="#" class="button circle soft-purple"&gt;+&lt;/a&gt;
-            &lt;a href="#" class="bordered-button circle red"&gt;+&lt;/a&gt;
+            &lt;a class="ss-button"&gt;Default&lt;/a&gt;
+            &lt;a class="ss-button no-round black"&gt;No Round&lt;/a&gt;
+            &lt;a class="ss-button pill blue"&gt;Pill Button&lt;/a&gt;
+            &lt;a class="ss-button raised circle soft-pink"&gt;+&lt;/a&gt;
+            &lt;a class="ss-button circle soft-purple"&gt;+&lt;/a&gt;
+            &lt;a class="ss-bordered-button circle red"&gt;+&lt;/a&gt;
         </pre>
         <br /><br />
 
         <h3 class="title">Sizes</h3>
         <div class="examples">
-            <a href="#" class="button tiny light-gray">Tiny</a>
-            <a href="#" class="bordered-button small gray">Small</a>
-            <a href="#" class="button light-gray">Regular</a>
-            <a href="#" class="bordered-button large gray">Large Button</a>
-            <a href="#" class="button x-large light-gray">Extra Large</a>
+            <a class="ss-button tiny light-gray">Tiny</a>
+            <a class="ss-bordered-button small gray">Small</a>
+            <a class="ss-button light-gray">Regular</a>
+            <a class="ss-bordered-button large gray">Large Button</a>
+            <a class="ss-button x-large light-gray">Extra Large</a>
         </div>
         <pre class="prettyprint lang-html">
-            &lt;a href="#" class="button tiny light-gray"&gt;Tiny&lt;/a&gt;
-            &lt;a href="#" class="bordered-button small gray"&gt;Small&lt;/a&gt;
-            &lt;a href="#" class="button light-gray"&gt;Regular&lt;/a&gt;
-            &lt;a href="#" class="bordered-button large gray"&gt;Large Button&lt;/a&gt;
-            &lt;a href="#" class="button x-large light-gray"&gt;Extra Large&lt;/a&gt;
+            &lt;a class="ss-button tiny light-gray"&gt;Tiny&lt;/a&gt;
+            &lt;a class="ss-bordered-button small gray"&gt;Small&lt;/a&gt;
+            &lt;a class="ss-button light-gray"&gt;Regular&lt;/a&gt;
+            &lt;a class="ss-bordered-button large gray"&gt;Large Button&lt;/a&gt;
+            &lt;a class="ss-button x-large light-gray"&gt;Extra Large&lt;/a&gt;
         </pre>
         <br /><br />
 
         <h3 class="title">Padding Styles</h3>
         <div class="examples">
-            <a href="#" class="button light-pad light-gray">Light</a>
-            <a href="#" class="bordered-button gray">Regular</a>
-            <a href="#" class="button heavy-pad light-gray">Heavy</a>
+            <a class="ss-button light-pad light-gray">Light</a>
+            <a class="ss-bordered-button gray">Regular</a>
+            <a class="ss-button heavy-pad light-gray">Heavy</a>
         </div>
         <pre class="prettyprint lang-html">
-            &lt;a href="#" class="button light-pad light-gray"&gt;Light&lt;/a&gt;
-            &lt;a href="#" class="bordered-button gray"&gt;Regular&lt;/a&gt;
-            &lt;a href="#" class="button heavy-pad light-gray"&gt;Heavy&lt;/a&gt;
+            &lt;a class="ss-button light-pad light-gray"&gt;Light&lt;/a&gt;
+            &lt;a class="ss-bordered-button gray"&gt;Regular&lt;/a&gt;
+            &lt;a class="ss-button heavy-pad light-gray"&gt;Heavy&lt;/a&gt;
         </pre>
 
 
         <h3 class="title">Colors</h3>
         <div class="box examples">
-            <a href="#" class="button tiny">Default</a>
-            <a href="#" class="button tiny white">White</a>
-            <a href="#" class="button tiny light-gray">Light Gray</a>
-            <a href="#" class="button tiny gray">Gray</a>
-            <a href="#" class="button tiny dark-gray">Dark Gray</a>
-            <a href="#" class="button tiny black">Black</a>
+            <a class="ss-button tiny">Default</a>
+            <a class="ss-button tiny white">White</a>
+            <a class="ss-button tiny light-gray">Light Gray</a>
+            <a class="ss-button tiny gray">Gray</a>
+            <a class="ss-button tiny dark-gray">Dark Gray</a>
+            <a class="ss-button tiny black">Black</a>
              <br />
-            <a href="#" class="button tiny blue">Blue</a>
-            <a href="#" class="button tiny green">Green</a>
-            <a href="#" class="button tiny yellow">Yellow</a>
-            <a href="#" class="button tiny red">Red</a>
+            <a class="ss-button tiny blue">Blue</a>
+            <a class="ss-button tiny green">Green</a>
+            <a class="ss-button tiny yellow">Yellow</a>
+            <a class="ss-button tiny red">Red</a>
              <br />
-            <a href="#" class="button tiny bright-pink">Bright Pink</a>
-            <a href="#" class="button tiny teal">Teal</a>
-            <a href="#" class="button tiny purple">Purple</a>
-            <a href="#" class="button tiny bright-green">Bright Green</a>
+            <a class="ss-button tiny bright-pink">Bright Pink</a>
+            <a class="ss-button tiny teal">Teal</a>
+            <a class="ss-button tiny purple">Purple</a>
+            <a class="ss-button tiny bright-green">Bright Green</a>
              <br />
-            <a href="#" class="button tiny soft-pink">Soft Pink</a>
-            <a href="#" class="button tiny soft-purple">Soft Purple</a>
-            <a href="#" class="button tiny soft-blue">Soft Blue</a>
-            <a href="#" class="button tiny soft-green">Soft Green</a>
-            <a href="#" class="button tiny soft-red">Soft Red</a>
-            <a href="#" class="button tiny soft-yellow">Soft Yellow</a>
+            <a class="ss-button tiny soft-pink">Soft Pink</a>
+            <a class="ss-button tiny soft-purple">Soft Purple</a>
+            <a class="ss-button tiny soft-blue">Soft Blue</a>
+            <a class="ss-button tiny soft-green">Soft Green</a>
+            <a class="ss-button tiny soft-red">Soft Red</a>
+            <a class="ss-button tiny soft-yellow">Soft Yellow</a>
              <br />
-            <a href="#" class="button tiny dark-blue">Dark Blue</a>
-            <a href="#" class="button tiny dark-green">Dark Green</a>
-            <a href="#" class="button tiny dark-red">Dark Red</a>
+            <a class="ss-button tiny dark-blue">Dark Blue</a>
+            <a class="ss-button tiny dark-green">Dark Green</a>
+            <a class="ss-button tiny dark-red">Dark Red</a>
         </div>
     </div>
 </div>
