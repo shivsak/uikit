@@ -1,0 +1,1444 @@
+body {
+    padding: 10px;
+    font-family: "HelveticaNeue-Light", Helvetica, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+}
+h1.title,
+h2.title,
+h3.title,
+h4.title,
+h5.title,
+h6.title {
+    font-weight: 600;
+}
+h1.subtitle,
+h2.subtitle,
+h3.subtitle,
+h4.subtitle,
+h5.subtitle,
+h6.subtitle {
+    font-weight: 500;
+}
+p .body {
+    font-weight: 400;
+}
+a {
+    text-decoration: none;
+    color: #3399ff;
+}
+.round {
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.round.lighter-round {
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+.round.light-round {
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+.round.regular-round {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.round.heavy-round {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.round.heavier-round {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.round.circle {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    margin: 10px 5px;
+    text-align: center;
+    font-size: 21px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.round.pill {
+    border-radius: 999px;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -o-border-radius: 999px;
+}
+.baseButton {
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -o-border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #eee;
+    color: #000;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    display: inline-block;
+}
+.baseButton.lighter-round {
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+.baseButton.light-round {
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+.baseButton.regular-round {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.baseButton.heavy-round {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.baseButton.heavier-round {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.baseButton.circle {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    margin: 10px 5px;
+    text-align: center;
+    font-size: 21px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.baseButton.pill {
+    border-radius: 999px;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -o-border-radius: 999px;
+}
+.baseButton.lighter-pad {
+    padding: 2px 4px;
+}
+.baseButton.light-pad {
+    padding: 5px 10px;
+}
+.baseButton.regular-pad {
+    padding: 10px 20px;
+}
+.baseButton.heavy-pad {
+    padding: 20px 50px;
+}
+.baseButton.heavier-pad {
+    padding: 30px 90px;
+}
+.baseButton.tiny {
+    padding: 5px 10px;
+    font-size: 10px;
+}
+.baseButton.small {
+    padding: 5px 10px;
+    font-size: 12px;
+}
+.baseButton.medium {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.baseButton.large {
+    padding: 20px 50px;
+    font-size: 21px;
+}
+.baseButton.x-large {
+    padding: 30px 90px;
+    font-size: 28px;
+}
+.button {
+    border: 0;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -o-border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #eee;
+    color: #000;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    display: inline-block;
+}
+.button.red {
+    background: #f14545;
+    color: #fff;
+}
+.button.red:hover {
+    background-color: #ed1616;
+}
+.button.green {
+    background: #29d06f;
+    color: #fff;
+}
+.button.green:hover {
+    background-color: #21a558;
+}
+.button.yellow {
+    background: #ffe500;
+    color: #fff;
+    color: #000;
+}
+.button.yellow:hover {
+    background-color: #ccb700;
+    color: #000;
+}
+.button.blue {
+    background: #3399ff;
+    color: #fff;
+}
+.button.blue:hover {
+    background-color: #007fff;
+}
+.button.teal {
+    background: #33aabb;
+    color: #fff;
+}
+.button.teal:hover {
+    background-color: #288693;
+}
+.button.purple {
+    background: #903996;
+    color: #fff;
+}
+.button.purple:hover {
+    background-color: #6d2b71;
+}
+.button.soft-blue {
+    background: #7298b5;
+    color: #fff;
+}
+.button.soft-blue:hover {
+    background-color: #547fa0;
+}
+.button.soft-green {
+    background: #42b895;
+    color: #fff;
+}
+.button.soft-green:hover {
+    background-color: #359277;
+}
+.button.soft-red {
+    background: #d87171;
+    color: #fff;
+}
+.button.soft-red:hover {
+    background-color: #cd4949;
+}
+.button.soft-pink {
+    background: #d65c7c;
+    color: #fff;
+}
+.button.soft-pink:hover {
+    background-color: #cc335b;
+}
+.button.soft-purple {
+    background: #885577;
+    color: #fff;
+}
+.button.soft-purple:hover {
+    background-color: #69415c;
+}
+.button.soft-yellow {
+    background: #e8c256;
+    color: #fff;
+}
+.button.soft-yellow:hover {
+    background-color: #e2b229;
+}
+.button.dark-blue {
+    background: #001d86;
+    color: #fff;
+}
+.button.dark-blue:hover {
+    background-color: #001253;
+}
+.button.dark-green {
+    background: #02903e;
+    color: #fff;
+}
+.button.dark-green:hover {
+    background-color: #015e28;
+}
+.button.dark-red {
+    background: #c10f0f;
+    color: #fff;
+}
+.button.dark-red:hover {
+    background-color: #920b0b;
+}
+.button.bright-green {
+    background: #66cc00;
+    color: #fff;
+}
+.button.bright-green:hover {
+    background-color: #4d9900;
+}
+.button.bright-pink {
+    background: #e000b3;
+    color: #fff;
+}
+.button.bright-pink:hover {
+    background-color: #ad008a;
+}
+.button.white {
+    background: #fff;
+    color: #fff;
+    color: #000;
+}
+.button.white:hover {
+    background-color: #e6e6e6;
+    color: #000;
+}
+.button.gray {
+    background: #777;
+    color: #fff;
+}
+.button.gray:hover {
+    background-color: #5e5e5e;
+}
+.button.light-gray {
+    background: #eee;
+    color: #fff;
+    color: #000;
+}
+.button.light-gray:hover {
+    background-color: #d5d5d5;
+    color: #000;
+}
+.button.dark-gray {
+    background: #333;
+    color: #fff;
+}
+.button.dark-gray:hover {
+    background-color: #1a1a1a;
+}
+.button.black {
+    background: #000;
+    color: #fff;
+}
+.button.black:hover {
+    background-color: #000000;
+}
+.button.lighter-round {
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+.button.light-round {
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+.button.regular-round {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.button.heavy-round {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.button.heavier-round {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.button.circle {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    margin: 10px 5px;
+    text-align: center;
+    font-size: 21px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.button.pill {
+    border-radius: 999px;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -o-border-radius: 999px;
+}
+.button.lighter-pad {
+    padding: 2px 4px;
+}
+.button.light-pad {
+    padding: 5px 10px;
+}
+.button.regular-pad {
+    padding: 10px 20px;
+}
+.button.heavy-pad {
+    padding: 20px 50px;
+}
+.button.heavier-pad {
+    padding: 30px 90px;
+}
+.button.tiny {
+    padding: 5px 10px;
+    font-size: 10px;
+}
+.button.small {
+    padding: 5px 10px;
+    font-size: 12px;
+}
+.button.medium {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.button.large {
+    padding: 20px 50px;
+    font-size: 21px;
+}
+.button.x-large {
+    padding: 30px 90px;
+    font-size: 28px;
+}
+.bordered-button {
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -o-border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #eee;
+    color: #000;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    display: inline-block;
+}
+.bordered-button.lighter-round {
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+.bordered-button.light-round {
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+.bordered-button.regular-round {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.bordered-button.heavy-round {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.bordered-button.heavier-round {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.bordered-button.circle {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    margin: 10px 5px;
+    text-align: center;
+    font-size: 21px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.bordered-button.pill {
+    border-radius: 999px;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -o-border-radius: 999px;
+}
+.bordered-button.lighter-pad {
+    padding: 2px 4px;
+}
+.bordered-button.light-pad {
+    padding: 5px 10px;
+}
+.bordered-button.regular-pad {
+    padding: 10px 20px;
+}
+.bordered-button.heavy-pad {
+    padding: 20px 50px;
+}
+.bordered-button.heavier-pad {
+    padding: 30px 90px;
+}
+.bordered-button.tiny {
+    padding: 5px 10px;
+    font-size: 10px;
+}
+.bordered-button.small {
+    padding: 5px 10px;
+    font-size: 12px;
+}
+.bordered-button.medium {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.bordered-button.large {
+    padding: 20px 50px;
+    font-size: 21px;
+}
+.bordered-button.x-large {
+    padding: 30px 90px;
+    font-size: 28px;
+}
+.buildButtonColorConnections.red {
+    background: #f14545;
+    color: #fff;
+}
+.buildButtonColorConnections.red:hover {
+    background-color: #ed1616;
+}
+.buildButtonColorConnections.green {
+    background: #29d06f;
+    color: #fff;
+}
+.buildButtonColorConnections.green:hover {
+    background-color: #21a558;
+}
+.buildButtonColorConnections.yellow {
+    background: #ffe500;
+    color: #fff;
+    color: #000;
+}
+.buildButtonColorConnections.yellow:hover {
+    background-color: #ccb700;
+    color: #000;
+}
+.buildButtonColorConnections.blue {
+    background: #3399ff;
+    color: #fff;
+}
+.buildButtonColorConnections.blue:hover {
+    background-color: #007fff;
+}
+.buildButtonColorConnections.teal {
+    background: #33aabb;
+    color: #fff;
+}
+.buildButtonColorConnections.teal:hover {
+    background-color: #288693;
+}
+.buildButtonColorConnections.purple {
+    background: #903996;
+    color: #fff;
+}
+.buildButtonColorConnections.purple:hover {
+    background-color: #6d2b71;
+}
+.buildButtonColorConnections.soft-blue {
+    background: #7298b5;
+    color: #fff;
+}
+.buildButtonColorConnections.soft-blue:hover {
+    background-color: #547fa0;
+}
+.buildButtonColorConnections.soft-green {
+    background: #42b895;
+    color: #fff;
+}
+.buildButtonColorConnections.soft-green:hover {
+    background-color: #359277;
+}
+.buildButtonColorConnections.soft-red {
+    background: #d87171;
+    color: #fff;
+}
+.buildButtonColorConnections.soft-red:hover {
+    background-color: #cd4949;
+}
+.buildButtonColorConnections.soft-pink {
+    background: #d65c7c;
+    color: #fff;
+}
+.buildButtonColorConnections.soft-pink:hover {
+    background-color: #cc335b;
+}
+.buildButtonColorConnections.soft-purple {
+    background: #885577;
+    color: #fff;
+}
+.buildButtonColorConnections.soft-purple:hover {
+    background-color: #69415c;
+}
+.buildButtonColorConnections.soft-yellow {
+    background: #e8c256;
+    color: #fff;
+}
+.buildButtonColorConnections.soft-yellow:hover {
+    background-color: #e2b229;
+}
+.buildButtonColorConnections.dark-blue {
+    background: #001d86;
+    color: #fff;
+}
+.buildButtonColorConnections.dark-blue:hover {
+    background-color: #001253;
+}
+.buildButtonColorConnections.dark-green {
+    background: #02903e;
+    color: #fff;
+}
+.buildButtonColorConnections.dark-green:hover {
+    background-color: #015e28;
+}
+.buildButtonColorConnections.dark-red {
+    background: #c10f0f;
+    color: #fff;
+}
+.buildButtonColorConnections.dark-red:hover {
+    background-color: #920b0b;
+}
+.buildButtonColorConnections.bright-green {
+    background: #66cc00;
+    color: #fff;
+}
+.buildButtonColorConnections.bright-green:hover {
+    background-color: #4d9900;
+}
+.buildButtonColorConnections.bright-pink {
+    background: #e000b3;
+    color: #fff;
+}
+.buildButtonColorConnections.bright-pink:hover {
+    background-color: #ad008a;
+}
+.buildButtonColorConnections.white {
+    background: #fff;
+    color: #fff;
+    color: #000;
+}
+.buildButtonColorConnections.white:hover {
+    background-color: #e6e6e6;
+    color: #000;
+}
+.buildButtonColorConnections.gray {
+    background: #777;
+    color: #fff;
+}
+.buildButtonColorConnections.gray:hover {
+    background-color: #5e5e5e;
+}
+.buildButtonColorConnections.light-gray {
+    background: #eee;
+    color: #fff;
+    color: #000;
+}
+.buildButtonColorConnections.light-gray:hover {
+    background-color: #d5d5d5;
+    color: #000;
+}
+.buildButtonColorConnections.dark-gray {
+    background: #333;
+    color: #fff;
+}
+.buildButtonColorConnections.dark-gray:hover {
+    background-color: #1a1a1a;
+}
+.buildButtonColorConnections.black {
+    background: #000;
+    color: #fff;
+}
+.buildButtonColorConnections.black:hover {
+    background-color: #000000;
+}
+.buildBorderedButtonColorConnections.red {
+    border-color: #f14545;
+    color: #f14545;
+}
+.buildBorderedButtonColorConnections.red:hover {
+    background-color: #ed1616;
+    color: #fabcbc;
+}
+.buildBorderedButtonColorConnections.green {
+    border-color: #29d06f;
+    color: #29d06f;
+}
+.buildBorderedButtonColorConnections.green:hover {
+    background-color: #21a558;
+    color: #8fe9b5;
+}
+.buildBorderedButtonColorConnections.yellow {
+    border-color: #ffe500;
+    color: #ffe500;
+}
+.buildBorderedButtonColorConnections.yellow:hover {
+    background-color: #ccb700;
+    color: #fff280;
+    color: #000;
+}
+.buildBorderedButtonColorConnections.blue {
+    border-color: #3399ff;
+    color: #3399ff;
+}
+.buildBorderedButtonColorConnections.blue:hover {
+    background-color: #007fff;
+    color: #b3d9ff;
+}
+.buildBorderedButtonColorConnections.teal {
+    border-color: #33aabb;
+    color: #33aabb;
+}
+.buildBorderedButtonColorConnections.teal:hover {
+    background-color: #288693;
+    color: #8dd6e0;
+}
+.buildBorderedButtonColorConnections.purple {
+    border-color: #903996;
+    color: #903996;
+}
+.buildBorderedButtonColorConnections.purple:hover {
+    background-color: #6d2b71;
+    color: #ca80cf;
+}
+.buildBorderedButtonColorConnections.soft-blue {
+    border-color: #7298b5;
+    color: #7298b5;
+}
+.buildBorderedButtonColorConnections.soft-blue:hover {
+    background-color: #547fa0;
+    color: #c6d5e1;
+}
+.buildBorderedButtonColorConnections.soft-green {
+    border-color: #42b895;
+    color: #42b895;
+}
+.buildBorderedButtonColorConnections.soft-green:hover {
+    background-color: #359277;
+    color: #9ddcc9;
+}
+.buildBorderedButtonColorConnections.soft-red {
+    border-color: #d87171;
+    color: #d87171;
+}
+.buildBorderedButtonColorConnections.soft-red:hover {
+    background-color: #cd4949;
+    color: #f3d5d5;
+}
+.buildBorderedButtonColorConnections.soft-pink {
+    border-color: #885577;
+    color: #885577;
+}
+.buildBorderedButtonColorConnections.soft-pink:hover {
+    background-color: #69415c;
+    color: #c19cb4;
+}
+.buildBorderedButtonColorConnections.soft-purple {
+    border-color: #885577;
+    color: #885577;
+}
+.buildBorderedButtonColorConnections.soft-purple:hover {
+    background-color: #69415c;
+    color: #c19cb4;
+}
+.buildBorderedButtonColorConnections.dark-blue {
+    border-color: #001d86;
+    color: #001d86;
+}
+.buildBorderedButtonColorConnections.dark-blue:hover {
+    background-color: #001253;
+    color: #063cff;
+}
+.buildBorderedButtonColorConnections.dark-green {
+    border-color: #02903e;
+    color: #02903e;
+}
+.buildBorderedButtonColorConnections.dark-green:hover {
+    background-color: #015e28;
+    color: #16fc77;
+}
+.buildBorderedButtonColorConnections.dark-red {
+    border-color: #c10f0f;
+    color: #c10f0f;
+}
+.buildBorderedButtonColorConnections.dark-red:hover {
+    background-color: #920b0b;
+    color: #f35d5d;
+}
+.buildBorderedButtonColorConnections.bright-green {
+    border-color: #66cc00;
+    color: #66cc00;
+}
+.buildBorderedButtonColorConnections.bright-green:hover {
+    background-color: #4d9900;
+    color: #a6ff4d;
+}
+.buildBorderedButtonColorConnections.bright-pink {
+    border-color: #e000b3;
+    color: #e000b3;
+}
+.buildBorderedButtonColorConnections.bright-pink:hover {
+    background-color: #ad008a;
+    color: #ff61df;
+}
+.buildBorderedButtonColorConnections.soft-yellow {
+    border-color: #e8c256;
+    color: #e8c256;
+}
+.buildBorderedButtonColorConnections.soft-yellow:hover {
+    background-color: #e2b229;
+    color: #f7ebc6;
+}
+.buildBorderedButtonColorConnections.white {
+    border-color: #fff;
+    color: #fff;
+}
+.buildBorderedButtonColorConnections.white:hover {
+    background-color: #e6e6e6;
+    color: #ffffff;
+    color: #000;
+}
+.buildBorderedButtonColorConnections.gray {
+    border-color: #777;
+    color: #777;
+}
+.buildBorderedButtonColorConnections.gray:hover {
+    background-color: #5e5e5e;
+    color: #b7b7b7;
+}
+.buildBorderedButtonColorConnections.light-gray {
+    border-color: #eee;
+    color: #eee;
+}
+.buildBorderedButtonColorConnections.light-gray:hover {
+    background-color: #d5d5d5;
+    color: #ffffff;
+    color: #000;
+}
+.buildBorderedButtonColorConnections.dark-gray {
+    border-color: #333;
+    color: #333;
+}
+.buildBorderedButtonColorConnections.dark-gray:hover {
+    background-color: #1a1a1a;
+    color: #737373;
+}
+.buildBorderedButtonColorConnections.black {
+    border-color: #000;
+    color: #000;
+}
+.buildBorderedButtonColorConnections.black:hover {
+    background-color: #000000;
+    color: #404040;
+}
+.buildMonotoneButtonColorConnections.red {
+    color: #fdebeb;
+    background-color: #ed1616;
+    color: #f8a4a4;
+}
+.buildMonotoneButtonColorConnections.green {
+    background-color: #21a558;
+    color: #baf1d1;
+}
+.buildMonotoneButtonColorConnections.yellow {
+    color: #fff7b3;
+    background-color: #ccb700;
+    color: #ffef66;
+    color: #000;
+}
+.buildMonotoneButtonColorConnections.blue {
+    color: #e5f2ff;
+    background-color: #007fff;
+    color: #99ccff;
+}
+.buildMonotoneButtonColorConnections.teal {
+    background-color: #288693;
+    color: #b6e4eb;
+}
+.buildMonotoneButtonColorConnections.purple {
+    background-color: #6d2b71;
+    color: #d9a5dd;
+}
+.buildMonotoneButtonColorConnections.soft-blue {
+    color: #e7eef2;
+    background-color: #547fa0;
+    color: #b5c9d8;
+}
+.buildMonotoneButtonColorConnections.soft-green {
+    background-color: #359277;
+    color: #c3e9de;
+}
+.buildMonotoneButtonColorConnections.soft-red {
+    color: #fefdfd;
+    background-color: #cd4949;
+    color: #eec1c1;
+}
+.buildMonotoneButtonColorConnections.soft-pink {
+    background-color: #69415c;
+    color: #d4bbcc;
+}
+.buildMonotoneButtonColorConnections.soft-purple {
+    background-color: #69415c;
+    color: #d4bbcc;
+}
+.buildMonotoneButtonColorConnections.dark-blue {
+    background-color: #001253;
+    color: #3a64ff;
+}
+.buildMonotoneButtonColorConnections.dark-green {
+    background-color: #015e28;
+    color: #48fc94;
+}
+.buildMonotoneButtonColorConnections.dark-red {
+    background-color: #920b0b;
+    color: #f68c8c;
+}
+.buildMonotoneButtonColorConnections.bright-green {
+    background-color: #4d9900;
+    color: #bfff80;
+}
+.buildMonotoneButtonColorConnections.bright-pink {
+    background-color: #ad008a;
+    color: #ff94e9;
+}
+.buildMonotoneButtonColorConnections.soft-yellow {
+    color: #fdfbf3;
+    background-color: #e2b229;
+    color: #f4e2b0;
+}
+.buildMonotoneButtonColorConnections.white {
+    background-color: #e6e6e6;
+    color: #ffffff;
+    color: #000;
+}
+.buildMonotoneButtonColorConnections.gray {
+    background-color: #5e5e5e;
+    color: #d0d0d0;
+}
+.buildMonotoneButtonColorConnections.light-gray {
+    background-color: #d5d5d5;
+    color: #ffffff;
+    color: #000;
+}
+.buildMonotoneButtonColorConnections.dark-gray {
+    background-color: #1a1a1a;
+    color: #8c8c8c;
+}
+.buildMonotoneButtonColorConnections.black {
+    background-color: #000000;
+    color: #595959;
+}
+.bordered-button {
+    background: none;
+    border: 1px solid #000;
+    color: #000;
+}
+.bordered-button.red {
+    border-color: #f14545;
+    color: #f14545;
+}
+.bordered-button.red:hover {
+    background-color: #ed1616;
+    color: #fabcbc;
+}
+.bordered-button.green {
+    border-color: #29d06f;
+    color: #29d06f;
+}
+.bordered-button.green:hover {
+    background-color: #21a558;
+    color: #8fe9b5;
+}
+.bordered-button.yellow {
+    border-color: #ffe500;
+    color: #ffe500;
+}
+.bordered-button.yellow:hover {
+    background-color: #ccb700;
+    color: #fff280;
+    color: #000;
+}
+.bordered-button.blue {
+    border-color: #3399ff;
+    color: #3399ff;
+}
+.bordered-button.blue:hover {
+    background-color: #007fff;
+    color: #b3d9ff;
+}
+.bordered-button.teal {
+    border-color: #33aabb;
+    color: #33aabb;
+}
+.bordered-button.teal:hover {
+    background-color: #288693;
+    color: #8dd6e0;
+}
+.bordered-button.purple {
+    border-color: #903996;
+    color: #903996;
+}
+.bordered-button.purple:hover {
+    background-color: #6d2b71;
+    color: #ca80cf;
+}
+.bordered-button.soft-blue {
+    border-color: #7298b5;
+    color: #7298b5;
+}
+.bordered-button.soft-blue:hover {
+    background-color: #547fa0;
+    color: #c6d5e1;
+}
+.bordered-button.soft-green {
+    border-color: #42b895;
+    color: #42b895;
+}
+.bordered-button.soft-green:hover {
+    background-color: #359277;
+    color: #9ddcc9;
+}
+.bordered-button.soft-red {
+    border-color: #d87171;
+    color: #d87171;
+}
+.bordered-button.soft-red:hover {
+    background-color: #cd4949;
+    color: #f3d5d5;
+}
+.bordered-button.soft-pink {
+    border-color: #885577;
+    color: #885577;
+}
+.bordered-button.soft-pink:hover {
+    background-color: #69415c;
+    color: #c19cb4;
+}
+.bordered-button.soft-purple {
+    border-color: #885577;
+    color: #885577;
+}
+.bordered-button.soft-purple:hover {
+    background-color: #69415c;
+    color: #c19cb4;
+}
+.bordered-button.dark-blue {
+    border-color: #001d86;
+    color: #001d86;
+}
+.bordered-button.dark-blue:hover {
+    background-color: #001253;
+    color: #063cff;
+}
+.bordered-button.dark-green {
+    border-color: #02903e;
+    color: #02903e;
+}
+.bordered-button.dark-green:hover {
+    background-color: #015e28;
+    color: #16fc77;
+}
+.bordered-button.dark-red {
+    border-color: #c10f0f;
+    color: #c10f0f;
+}
+.bordered-button.dark-red:hover {
+    background-color: #920b0b;
+    color: #f35d5d;
+}
+.bordered-button.bright-green {
+    border-color: #66cc00;
+    color: #66cc00;
+}
+.bordered-button.bright-green:hover {
+    background-color: #4d9900;
+    color: #a6ff4d;
+}
+.bordered-button.bright-pink {
+    border-color: #e000b3;
+    color: #e000b3;
+}
+.bordered-button.bright-pink:hover {
+    background-color: #ad008a;
+    color: #ff61df;
+}
+.bordered-button.soft-yellow {
+    border-color: #e8c256;
+    color: #e8c256;
+}
+.bordered-button.soft-yellow:hover {
+    background-color: #e2b229;
+    color: #f7ebc6;
+}
+.bordered-button.white {
+    border-color: #fff;
+    color: #fff;
+}
+.bordered-button.white:hover {
+    background-color: #e6e6e6;
+    color: #ffffff;
+    color: #000;
+}
+.bordered-button.gray {
+    border-color: #777;
+    color: #777;
+}
+.bordered-button.gray:hover {
+    background-color: #5e5e5e;
+    color: #b7b7b7;
+}
+.bordered-button.light-gray {
+    border-color: #eee;
+    color: #eee;
+}
+.bordered-button.light-gray:hover {
+    background-color: #d5d5d5;
+    color: #ffffff;
+    color: #000;
+}
+.bordered-button.dark-gray {
+    border-color: #333;
+    color: #333;
+}
+.bordered-button.dark-gray:hover {
+    background-color: #1a1a1a;
+    color: #737373;
+}
+.bordered-button.black {
+    border-color: #000;
+    color: #000;
+}
+.bordered-button.black:hover {
+    background-color: #000000;
+    color: #404040;
+}
+.raised {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+.raised:hover {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+.monotone.red {
+    color: #fdebeb;
+    background-color: #ed1616;
+    color: #f8a4a4;
+}
+.monotone.green {
+    background-color: #21a558;
+    color: #baf1d1;
+}
+.monotone.yellow {
+    color: #fff7b3;
+    background-color: #ccb700;
+    color: #ffef66;
+    color: #000;
+}
+.monotone.blue {
+    color: #e5f2ff;
+    background-color: #007fff;
+    color: #99ccff;
+}
+.monotone.teal {
+    background-color: #288693;
+    color: #b6e4eb;
+}
+.monotone.purple {
+    background-color: #6d2b71;
+    color: #d9a5dd;
+}
+.monotone.soft-blue {
+    color: #e7eef2;
+    background-color: #547fa0;
+    color: #b5c9d8;
+}
+.monotone.soft-green {
+    background-color: #359277;
+    color: #c3e9de;
+}
+.monotone.soft-red {
+    color: #fefdfd;
+    background-color: #cd4949;
+    color: #eec1c1;
+}
+.monotone.soft-pink {
+    background-color: #69415c;
+    color: #d4bbcc;
+}
+.monotone.soft-purple {
+    background-color: #69415c;
+    color: #d4bbcc;
+}
+.monotone.dark-blue {
+    background-color: #001253;
+    color: #3a64ff;
+}
+.monotone.dark-green {
+    background-color: #015e28;
+    color: #48fc94;
+}
+.monotone.dark-red {
+    background-color: #920b0b;
+    color: #f68c8c;
+}
+.monotone.bright-green {
+    background-color: #4d9900;
+    color: #bfff80;
+}
+.monotone.bright-pink {
+    background-color: #ad008a;
+    color: #ff94e9;
+}
+.monotone.soft-yellow {
+    color: #fdfbf3;
+    background-color: #e2b229;
+    color: #f4e2b0;
+}
+.monotone.white {
+    background-color: #e6e6e6;
+    color: #ffffff;
+    color: #000;
+}
+.monotone.gray {
+    background-color: #5e5e5e;
+    color: #d0d0d0;
+}
+.monotone.light-gray {
+    background-color: #d5d5d5;
+    color: #ffffff;
+    color: #000;
+}
+.monotone.dark-gray {
+    background-color: #1a1a1a;
+    color: #8c8c8c;
+}
+.monotone.black {
+    background-color: #000000;
+    color: #595959;
+}
+.no-round {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+}
+.solid {
+    background: #eee;
+    border: 0;
+    color: #000;
+}
+.solid.red {
+    background: #f14545;
+    color: #fff;
+}
+.solid.red:hover {
+    background-color: #ed1616;
+}
+.solid.green {
+    background: #29d06f;
+    color: #fff;
+}
+.solid.green:hover {
+    background-color: #21a558;
+}
+.solid.yellow {
+    background: #ffe500;
+    color: #fff;
+    color: #000;
+}
+.solid.yellow:hover {
+    background-color: #ccb700;
+    color: #000;
+}
+.solid.blue {
+    background: #3399ff;
+    color: #fff;
+}
+.solid.blue:hover {
+    background-color: #007fff;
+}
+.solid.teal {
+    background: #33aabb;
+    color: #fff;
+}
+.solid.teal:hover {
+    background-color: #288693;
+}
+.solid.purple {
+    background: #903996;
+    color: #fff;
+}
+.solid.purple:hover {
+    background-color: #6d2b71;
+}
+.solid.soft-blue {
+    background: #7298b5;
+    color: #fff;
+}
+.solid.soft-blue:hover {
+    background-color: #547fa0;
+}
+.solid.soft-green {
+    background: #42b895;
+    color: #fff;
+}
+.solid.soft-green:hover {
+    background-color: #359277;
+}
+.solid.soft-red {
+    background: #d87171;
+    color: #fff;
+}
+.solid.soft-red:hover {
+    background-color: #cd4949;
+}
+.solid.soft-pink {
+    background: #d65c7c;
+    color: #fff;
+}
+.solid.soft-pink:hover {
+    background-color: #cc335b;
+}
+.solid.soft-purple {
+    background: #885577;
+    color: #fff;
+}
+.solid.soft-purple:hover {
+    background-color: #69415c;
+}
+.solid.soft-yellow {
+    background: #e8c256;
+    color: #fff;
+}
+.solid.soft-yellow:hover {
+    background-color: #e2b229;
+}
+.solid.dark-blue {
+    background: #001d86;
+    color: #fff;
+}
+.solid.dark-blue:hover {
+    background-color: #001253;
+}
+.solid.dark-green {
+    background: #02903e;
+    color: #fff;
+}
+.solid.dark-green:hover {
+    background-color: #015e28;
+}
+.solid.dark-red {
+    background: #c10f0f;
+    color: #fff;
+}
+.solid.dark-red:hover {
+    background-color: #920b0b;
+}
+.solid.bright-green {
+    background: #66cc00;
+    color: #fff;
+}
+.solid.bright-green:hover {
+    background-color: #4d9900;
+}
+.solid.bright-pink {
+    background: #e000b3;
+    color: #fff;
+}
+.solid.bright-pink:hover {
+    background-color: #ad008a;
+}
+.solid.white {
+    background: #fff;
+    color: #fff;
+    color: #000;
+}
+.solid.white:hover {
+    background-color: #e6e6e6;
+    color: #000;
+}
+.solid.gray {
+    background: #777;
+    color: #fff;
+}
+.solid.gray:hover {
+    background-color: #5e5e5e;
+}
+.solid.light-gray {
+    background: #eee;
+    color: #fff;
+    color: #000;
+}
+.solid.light-gray:hover {
+    background-color: #d5d5d5;
+    color: #000;
+}
+.solid.dark-gray {
+    background: #333;
+    color: #fff;
+}
+.solid.dark-gray:hover {
+    background-color: #1a1a1a;
+}
+.solid.black {
+    background: #000;
+    color: #fff;
+}
+.solid.black:hover {
+    background-color: #000000;
+}

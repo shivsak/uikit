@@ -45,3 +45,17 @@ body {
   border-radius: 10px;
   max-width: 1000px;
 }
+
+.prettyprint.lang-html {
+  border: 0;
+  padding: 30px 30px 0 0;
+  text-wrap: normal;
+  overflow: scroll;
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+  border-radius: 10px;
+}
+
+.prettyprint.lang-html span.pln {
+  width: 5px !important;
+}
